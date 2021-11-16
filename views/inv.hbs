@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+<link href="main_2.css" rel="stylesheet" />
+<title>Document</title></head><body>
+<div class="v4_59"><div class="v4_60"></div>
+<div class="v4_61"></div>
+<div class="v4_62"></div>
+{{!-- <div class="v4_63"></div> --}}
+
+<span class="v4_66">{{title}}</span>
+
+{{# if condition}}
+    {{!-- <div class="v4_63"> --}}
+    {{# each items}}
+        {{# each this}}
+            {{this}}
+            <br>
+        {{/each}}
+        <br>
+        <br>
+        </a>
+    {{/each}}
+    </div>
+{{else}}
+    <span class="v4_56">Your List is Empty Add Items </span>
+{{/if}}
+
+
+{{!-- <span class="v4_68">Apple</span>
+<span class="v4_81">5</span>
+<span class="v4_82">24</span>
+<span class="v4_83">2238</span> --}}
+
+
+<span class="v4_70">Add</span><span class="v4_77">Name</span><span class="v4_78">Qty</span>
+<span class="v4_79">Price</span><span class="v4_80">Total</span>
+{{!-- <span class="v4_71">Remove</span> --}}
+
+<form action="/remove" method="post">
+    
+    <input class="v4_72" type="number" step="1" id="remove" name="remove">
+    <div class="v4_71">
+    <button  type="submit">Remove</button>
+    </div>
+    </form>
+{{!-- <span class="v4_72">Del</span> --}}
+<div class="v4_73"></div><div class="v4_74"><div class="v4_75"></div><a class="v4_76" href='invlist'>Dashboard</a></div><div class="v9_10">
+    <div class="v4_92"></div>
+    <span class="v4_97">Name</span><span class="v4_98">Qty</span><div class="v4_102"></div><div class="v4_103"></div>
+    <div class="v4_104"></div><span class="v4_99">Price</span>
+    <span class="v4_101">Add</span>
+
+    <form action="/add" method="post">
+    
+    <input class="v9_7" type="text" id="name" name="name">
+    <input class="v9_8" type="number" step="1" id="qty" name="qty">
+    <input class="v9_9" type="number" step="1" id="price" name="price">
+    <div class="v4_101">
+    <button  type="submit">Add</button>
+    </div>
+    </form>
+
+ 
+    </body></html>

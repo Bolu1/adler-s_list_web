@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+<link href="main_1.css" rel="stylesheet" />
+<title>Document</title></head><body>
+    <div class="v4_39"><div class="v4_40"></div><div class="v4_41"></div>
+ <div class="v4_49"></div>{{!--<div class="v4_51"></div><div class="v4_52"></div><div class="v4_53"></div> --}}
+<span class="v4_42">Inventory List</span>
+{{# if condition}}
+    <div class="v4_54">
+    {{# each arr}}
+        <a class="txt" href='list?item={{this}}'> 
+        {{this}}
+        <br>
+        <br>
+        </a>
+    {{/each}}
+    </div>
+{{else}}
+    <span class="v4_56">Your List is Empty Create one now</span>
+{{/if}}
+{{!-- <span class="v4_56">List 1</span>
+<span class="v4_55">List 3</span> --}}
+
+<form action="/removel" method="post">
+    
+    <input class="v4_50" type="number" step="1" id="remove" name="remove">
+    <div class="v4_58">
+    <button  type="submit">Remove</button>
+    </div>
+    </form>
+
+<span class="v4_57">Add</span>
+{{!-- <span class="v4_58">Remove</span> --}}
+{{!-- <span class="v4_50">Search</span> --}}
+<div class="v4_45"></div>
+<div class="v4_46"><div class="v4_47"></div>
+<a class="v4_48" href='logout'>Logout</a></div></div>
+
+<form action="/addl" method="post">
+    
+    <input class="v9_8" type="text"  id="add" name="add">
+    <div class="v4_101">
+    <button  type="submit">Add</button>
+    </div>
+    </form>
+
+
+</body></html>
